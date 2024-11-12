@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-width:none ; 
+}
+
+body{
+    background: rgb(252, 251, 248);
+}
+
+.welcom_Background{
+    background-image: url("img/1.jpg");
+    background-size: 230%;
+    background-attachment: fixed;
+}
+
+header, footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.249);
+    color: #f1f0f0ec;
+}
+
+footer{
+    color: #000000ec;
+}
+
+footer a{
+    color: #000000ec;
+    text-decoration: none;
+}
+
+.social-icons i{
+    padding-left: 5px;
+}
+
+.header_list_1 summary{
+    list-style: none;
+    cursor: pointer;
+}
+
+.header_list_1 .list{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 120px;
+    height: 200px;
+    background-color: #f1f0f0d1;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.header_list_2{
+    display: none;
+}
+
+.header_list_2 ul{
+    display: flex;
+    list-style: none;
+}
+
+.header_list_2 li{
+    padding-left: 10px;
+}
+
+.list a{
+    color: #000000ec;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.home{
+    padding: 0 20px;
+}
+
+.profile h1{
+    padding: 30px 0;
+    color: #f1f0f0ec;
+}
+
+.profile mark{
+    background-color: #f1f0f098;
+    color: #000000ec;
+    font-size: 35px;
+}
+
+.main_icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_icon a{
+    text-decoration: none;
+    color: #000000ec;
+    background: #f1f0f098;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.qut_feet h1, .sudanes_stuff h1, .contact h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #000000c8;
+}
+
+.brand_content{
+    width: 100%;
+    height: 100%;
+}
+
+.image_content{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.image_content img{
+    width: 80%;
+    padding: 0 30px;
+    animation-name: image_content_move;
+    animation-duration: 35s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes image_content_move{
+
+    0%{
+        translate: 0 0;
+    }
+
+    10%{
+        translate: -80% 0;
+    }
+
+    20%{
+        translate: -100% 0;
+    }
+
+    30%{
+        translate: -180% 0;
+    }
+
+    40%{
+        translate: -200% 0;
+    }
+
+    50%{
+        translate: -280% 0;
+    }
+
+    60%{
+        translate: -300% 0;
+    }
+
+    70%{
+        translate: -380% 0;
+    }
+
+    80%{
+        translate: -400% 0;
+    }
+
+    90%{
+        translate: -480% 0;
+    }
+
+    100%{
+        translate: -500% 0;
+    }
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+}
+
+.card{
+    color: #000000c8;
+    background-color: #f1f0f09d;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(32, 32, 32);
+    margin: 20px;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.icon{
+    font-size: 50px;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+@media (min-width:375px) and (max-width:424px) {
+
+    .welcom_Background{
+        background-size: 190%;
+    }
+
+}
+
+@media (min-width:425px) and (max-width:550px) {
+
+    .welcom_Background{
+        background-size: 140%;
+    }
+
+}
+
+@media (min-width:551px) and (max-width:650px) {
+
+    .welcom_Background{
+        background-size: 120%;
+    }
+
+}
+
+@media (min-width:651px) and (max-width:850px) {
+
+    .welcom_Background{
+        background-size: 100%;
+    }
+
+}
+
+@media (min-width:851px) and (max-width:1023px) {
+
+    .welcom_Background{
+        background-size: 70%;
+    }
+
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+
+    .welcom_Background{
+        background-size: 60%;
+    }
+
+}
