@@ -10,9 +10,10 @@ body{
 }
 
 .welcom_Background{
-    background-image: url("img/1.jpg");
-    background-size: 230%;
+    background-image: url("img/raad-01.png");
+    background-size: 10%;
     background-attachment: fixed;
+    background-color: rgba(87, 87, 87, 0.925);
 }
 
 header, footer{
@@ -58,6 +59,15 @@ footer a{
     cursor: pointer;
 }
 
+.header_list_2 a{
+    text-decoration: none;
+    color: #f1f0f0ec;
+}
+
+.header_list_2 h4:hover{
+    border-bottom: 2px solid #f1f0f0ec;
+}
+
 .header_list_2{
     display: none;
 }
@@ -68,13 +78,17 @@ footer a{
 }
 
 .header_list_2 li{
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 .list a{
     color: #000000ec;
     text-decoration: none;
     padding: 10px;
+}
+
+.list h2:hover{
+    border-bottom: 2px solid #3d3d3dbe;
 }
 
 .home{
@@ -90,6 +104,7 @@ footer a{
     background-color: #f1f0f098;
     color: #000000ec;
     font-size: 35px;
+    border-radius: 10px;
 }
 
 .main_icon{
@@ -119,7 +134,7 @@ footer a{
 .image_content{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .image_content img{
@@ -130,6 +145,10 @@ footer a{
     animation-delay: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#hody .image_content img{
+    animation-direction: alternate-reverse;
 }
 
 @keyframes image_content_move{
@@ -212,50 +231,18 @@ footer a{
     text-align: center;
 }
 
-@media (min-width:375px) and (max-width:424px) {
+@media (min-width:600px) and (max-width:1440px) {
 
-    .welcom_Background{
-        background-size: 190%;
+    .header_list_1{
+            display: none;
     }
 
-}
-
-@media (min-width:425px) and (max-width:550px) {
-
-    .welcom_Background{
-        background-size: 140%;
+    .header_list_2{
+            display: flex;
     }
 
-}
-
-@media (min-width:551px) and (max-width:650px) {
-
-    .welcom_Background{
-        background-size: 120%;
-    }
-
-}
-
-@media (min-width:651px) and (max-width:850px) {
-
-    .welcom_Background{
-        background-size: 100%;
-    }
-
-}
-
-@media (min-width:851px) and (max-width:1023px) {
-
-    .welcom_Background{
-        background-size: 70%;
-    }
-
-}
-
-@media (min-width:1024px) and (max-width:1440px) {
-
-    .welcom_Background{
-        background-size: 60%;
+    .image_content img{
+        width: 40%;
     }
 
 }
