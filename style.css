@@ -21,8 +21,8 @@ header, footer{
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.249);
-    color: #f1f0f0ec;
+    background: rgba(255, 255, 255, 0.765);
+    color: #000000ec;
 }
 
 footer{
