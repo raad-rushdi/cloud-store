@@ -3,6 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
     scrollbar-width:none ; 
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body{
@@ -13,7 +16,7 @@ body{
     background-image: url("img/raad-01.png");
     background-size: 15%;
     background-attachment: fixed;
-    background-color: rgba(87, 87, 87, 0.628);
+    background-color: rgba(75, 75, 75, 0.669);
 }
 
 header, footer{
@@ -101,7 +104,7 @@ footer a{
 }
 
 .profile mark{
-    background-color: #f1f0f098;
+    background-color: #cececef0;
     color: #000000ec;
     font-size: 35px;
     border-radius: 10px;
