@@ -8,10 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        @keyframes appear{
+            0%{
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50%{
+                opacity: .8;
+                transform: scale(1.2);
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .qut_feet, .sudanes_stuff, .contact{
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
     </style>
 </head>
 <body>
-    
+        
     <div class="welcom_Background">
 
         <header>
@@ -74,12 +95,12 @@
         <div class="brand_content">
 
             <div class="image_content">
-                <img src="img/3.jpg">
-                <img src="img/3.jpg">
-                <img src="img/3.jpg">
-                <img src="img/3.jpg">
-                <img src="img/3.jpg">
-                <img src="img/3.jpg">
+                <img src="img/3.jpg" class="product1">
+                <img src="img/4.png" class="product2">
+                <img src="img/5.png" class="product3">
+                <img src="img/6.png" class="product4">
+                <img src="img/3.jpg" class="product5">
+                <img src="img/3.jpg" class="product6">
             </div>
                
         </div>
@@ -168,7 +189,7 @@
 
     <footer>
 
-        <h4>@ copy right by Cloud group</h4>
+        <h6>@ 2025 Cloud Group. All Rights Reserved.</h6>
         
         <div class="social-icons">
 
