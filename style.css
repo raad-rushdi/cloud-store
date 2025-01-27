@@ -9,14 +9,15 @@
 }
 
 body{
-    background: rgb(252, 251, 248);
+    background: #182020ef;
 }
 
 .welcom_Background{
-    background-image: url("img/raad-01.png");
-    background-size: 15%;
+    background-image: url("img/hody/black.png");
+    background-size: contain;
     background-attachment: fixed;
-    background-color: rgba(75, 75, 75, 0.669);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 header, footer{
@@ -24,16 +25,18 @@ header, footer{
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.765);
-    color: #000000ec;
+    background: #28343300;
+    color: #ffffff;
+    text-shadow: 0 0 10px #03ffeaef;
 }
 
 footer{
-    color: #000000ec;
+    color: #ffffff;
+    text-shadow: 0 0 10px #03ffeaef;
 }
 
 footer a{
-    color: #000000ec;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -48,11 +51,11 @@ footer a{
 
 .header_list_1 .list{
     position: absolute;
-    top: 10%;
+    top: 7%;
     right: 0;
     width: 120px;
     height: 200px;
-    background-color: #f1f0f0d1;
+    background-color: #283433ef;
     border-radius: 10px;
     padding: 15px 20px;
     display: flex;
@@ -64,11 +67,12 @@ footer a{
 
 .header_list_2 a{
     text-decoration: none;
-    color: #000000ec;
+    color: #ffffffef;
 }
 
 .header_list_2 h4:hover{
-    border-bottom: 2px solid #000000ec;
+    border-bottom: 2px solid #ffffff;
+    text-shadow: 0 0 10px #03ffeaef;
 }
 
 .header_list_2{
@@ -85,27 +89,30 @@ footer a{
 }
 
 .list a{
-    color: #000000ec;
+    color:#ffffff;
+    text-shadow: 0 0 10px #03ffeaef;
     text-decoration: none;
     padding: 10px;
 }
 
 .list h2:hover{
-    border-bottom: 2px solid #3d3d3dbe;
+    border-bottom: 2px solid #ffffff;
 }
 
 .home{
     padding: 0 20px;
+    height: 100vh;
 }
 
 .profile h1{
     padding: 30px 0;
-    color: #f1f0f0ec;
+    color: #ffffffec;
+    text-shadow: 0 0 10px #03ffeaef;
 }
 
 .profile mark{
-    background-color: #cececef0;
-    color: #000000ec;
+    background-color: #03ffeaef;
+    color: #ffffff;
     font-size: 35px;
     border-radius: 10px;
 }
@@ -117,8 +124,8 @@ footer a{
 
 .main_icon a{
     text-decoration: none;
-    color: #000000ec;
-    background: #f1f0f098;
+    color: #03ffeaef;
+    text-shadow: 0 0 10px #ffffffef;
     border-radius: 30%;
     padding: 10px;
 }
@@ -126,7 +133,8 @@ footer a{
 .qut_feet h1, .sudanes_stuff h1, .contact h1{
     text-align: center;
     padding-top: 30px;
-    color: #000000c8;
+    color: #ffffff;
+    text-shadow: 0 0 10px #03ffeaef;
 }
 
 .brand_content{
@@ -144,56 +152,15 @@ footer a{
     width: 80%;
     padding: 0 30px;
     animation-name: image_content_move;
-    animation-duration: 35s;
+    animation-duration: 30s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#hody .image_content img{
-    animation-direction: alternate-reverse;
 }
 
 @keyframes image_content_move{
 
     0%{
         translate: 0 0;
-    }
-
-    10%{
-        translate: -80% 0;
-    }
-
-    20%{
-        translate: -100% 0;
-    }
-
-    30%{
-        translate: -180% 0;
-    }
-
-    40%{
-        translate: -200% 0;
-    }
-
-    50%{
-        translate: -280% 0;
-    }
-
-    60%{
-        translate: -300% 0;
-    }
-
-    70%{
-        translate: -380% 0;
-    }
-
-    80%{
-        translate: -400% 0;
-    }
-
-    90%{
-        translate: -480% 0;
     }
 
     100%{
@@ -211,10 +178,11 @@ footer a{
 }
 
 .card{
-    color: #000000c8;
-    background-color: #f1f0f09d;
+    color: #ffffff;
+    text-shadow: 0 0 10px #03ffeaef;
+    background-color: #3d3d3dbe;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(32, 32, 32);
+    box-shadow: 0 5px 10px #03ffeaef;
     margin: 20px;
     padding: 20px;
     transition: 0.5s ease;
@@ -235,6 +203,10 @@ footer a{
 }
 
 @media (min-width:600px) and (max-width:1440px) {
+
+    .welcom_Background{
+        background-position: right;
+    }
 
     .header_list_1{
             display: none;
